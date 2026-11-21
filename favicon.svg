@@ -1,6 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect x="3" y="10" width="36" height="36" rx="10" fill="rgba(127,243,255,0.30)" stroke="#59e2ff" stroke-width="3"/>
-  <rect x="20" y="21" width="38" height="38" rx="10" fill="rgba(255,209,102,0.30)" stroke="#ffd166" stroke-width="3"/>
-  <circle cx="39" cy="40" r="6.5" fill="#ff8fa3"/>
-  <circle cx="36.8" cy="37.8" r="2" fill="#ffffff"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b1465"/>
+      <stop offset="1" stop-color="#521478"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff6e6"/>
+      <stop offset="1" stop-color="#ffd98f"/>
+    </linearGradient>
+    <linearGradient id="petal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff8fc0"/>
+      <stop offset="1" stop-color="#ff3d8f"/>
+    </linearGradient>
+    <linearGradient id="bevel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#3a0e2e" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <g transform="rotate(-4 32 34)">
+    <rect x="12" y="12" width="40" height="40" rx="11" fill="url(#tile)" stroke="#330f22" stroke-opacity="0.25" stroke-width="1"/>
+    <rect x="13.5" y="13.5" width="37" height="37" rx="10" fill="none" stroke="url(#bevel)" stroke-width="3"/>
+    <g fill="url(#petal)" stroke="#330f22" stroke-opacity="0.45" stroke-width="1.4">
+      <ellipse cx="32" cy="20.5" rx="5.2" ry="8.6"/>
+      <ellipse cx="32" cy="20.5" rx="5.2" ry="8.6" transform="rotate(72 32 33)"/>
+      <ellipse cx="32" cy="20.5" rx="5.2" ry="8.6" transform="rotate(144 32 33)"/>
+      <ellipse cx="32" cy="20.5" rx="5.2" ry="8.6" transform="rotate(216 32 33)"/>
+      <ellipse cx="32" cy="20.5" rx="5.2" ry="8.6" transform="rotate(288 32 33)"/>
+    </g>
+    <circle cx="32" cy="33" r="6.4" fill="#ffcf5c" stroke="#330f22" stroke-opacity="0.4" stroke-width="1.2"/>
+    <ellipse cx="29.5" cy="30.5" rx="3.4" ry="2.2" fill="#ffffff" fill-opacity="0.85" transform="rotate(-30 29.5 30.5)"/>
+  </g>
 </svg>

@@ -1,5 +1,5 @@
 {
-  "name": "Tile Bloom — Triple Match Puzzle",
+  "name": "Tile Bloom \u2014 Triple Match Puzzle",
   "short_name": "Tile Bloom",
   "description": "A relaxing triple-tile matching puzzle across four themed worlds.",
   "start_url": "./",
@@ -8,7 +8,7 @@
   "orientation": "portrait",
   "background_color": "#041420",
   "theme_color": "#041420",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "icons": [
     {
       "src": "icons/icon-192.png",
