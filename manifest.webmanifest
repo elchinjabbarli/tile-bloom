@@ -8,7 +8,7 @@
   "orientation": "portrait",
   "background_color": "#041420",
   "theme_color": "#041420",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "icons": [
     {
       "src": "icons/icon-192.png",
