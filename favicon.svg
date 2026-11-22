@@ -1,35 +1,43 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#3b1465"/>
-      <stop offset="1" stop-color="#521478"/>
+      <stop offset="0" stop-color="#0f4a70"/>
+      <stop offset="1" stop-color="#03121d"/>
     </linearGradient>
     <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fff6e6"/>
-      <stop offset="1" stop-color="#ffd98f"/>
+      <stop offset="0" stop-color="#fffdf4"/>
+      <stop offset="0.5" stop-color="#f7e9c4"/>
+      <stop offset="1" stop-color="#e2c288"/>
     </linearGradient>
     <linearGradient id="petal" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ff8fc0"/>
-      <stop offset="1" stop-color="#ff3d8f"/>
+      <stop offset="0" stop-color="#e8fbff"/>
+      <stop offset="0.5" stop-color="#8fe0f8"/>
+      <stop offset="1" stop-color="#2fa9d8"/>
     </linearGradient>
+    <radialGradient id="core" cx="0.38" cy="0.32" r="0.9">
+      <stop offset="0" stop-color="#ffefb2"/>
+      <stop offset="0.6" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#d99a2e"/>
+    </radialGradient>
     <linearGradient id="bevel" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.8"/>
-      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.1"/>
-      <stop offset="1" stop-color="#3a0e2e" stop-opacity="0.3"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#3a2410" stop-opacity="0.28"/>
     </linearGradient>
   </defs>
   <rect width="64" height="64" rx="14" fill="url(#bg)"/>
-  <g transform="rotate(-4 32 34)">
-    <rect x="12" y="12" width="40" height="40" rx="11" fill="url(#tile)" stroke="#330f22" stroke-opacity="0.25" stroke-width="1"/>
-    <rect x="13.5" y="13.5" width="37" height="37" rx="10" fill="none" stroke="url(#bevel)" stroke-width="3"/>
-    <g fill="url(#petal)" stroke="#330f22" stroke-opacity="0.45" stroke-width="1.4">
-      <ellipse cx="32" cy="20.5" rx="5.2" ry="8.6"/>
-      <ellipse cx="32" cy="20.5" rx="5.2" ry="8.6" transform="rotate(72 32 33)"/>
-      <ellipse cx="32" cy="20.5" rx="5.2" ry="8.6" transform="rotate(144 32 33)"/>
-      <ellipse cx="32" cy="20.5" rx="5.2" ry="8.6" transform="rotate(216 32 33)"/>
-      <ellipse cx="32" cy="20.5" rx="5.2" ry="8.6" transform="rotate(288 32 33)"/>
+  <g transform="rotate(-5 32 32)">
+    <rect x="12" y="12" width="40" height="40" rx="11" fill="url(#tile)" stroke="#2c1a10" stroke-opacity="0.5" stroke-width="1.6"/>
+    <rect x="14.5" y="14.5" width="35" height="35" rx="9" fill="none" stroke="url(#bevel)" stroke-width="4"/>
+    <g fill="url(#petal)" stroke="#173a52" stroke-opacity="0.5" stroke-width="1.4">
+      <ellipse cx="32" cy="20.5" rx="5.6" ry="9.5"/>
+      <ellipse cx="32" cy="20.5" rx="5.6" ry="9.5" transform="rotate(72 32 32.5)"/>
+      <ellipse cx="32" cy="20.5" rx="5.6" ry="9.5" transform="rotate(144 32 32.5)"/>
+      <ellipse cx="32" cy="20.5" rx="5.6" ry="9.5" transform="rotate(216 32 32.5)"/>
+      <ellipse cx="32" cy="20.5" rx="5.6" ry="9.5" transform="rotate(288 32 32.5)"/>
     </g>
-    <circle cx="32" cy="33" r="6.4" fill="#ffcf5c" stroke="#330f22" stroke-opacity="0.4" stroke-width="1.2"/>
-    <ellipse cx="29.5" cy="30.5" rx="3.4" ry="2.2" fill="#ffffff" fill-opacity="0.85" transform="rotate(-30 29.5 30.5)"/>
+    <circle cx="32" cy="32.5" r="6.6" fill="url(#core)" stroke="#8a5c14" stroke-opacity="0.55" stroke-width="1.2"/>
+    <ellipse cx="29.8" cy="30.2" rx="3.4" ry="2" fill="#ffffff" fill-opacity="0.85" transform="rotate(-32 29.8 30.2)"/>
+    <ellipse cx="29.2" cy="16.5" rx="2" ry="3" fill="#ffffff" fill-opacity="0.5" transform="rotate(-18 29.2 16.5)"/>
   </g>
 </svg>
